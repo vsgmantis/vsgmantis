@@ -19,8 +19,8 @@ body {
 
   background-image: url('space.gif');
   background-repeat: repeat;
-  background-size: 200px 200px; /* 🔥 SHRINK the GIF size here */
-  background-position: top left;
+  background-size: 150px 150px; /* ✅ this controls the size */
+  background-position: center;
 }
 
 /* Container + Header */
@@ -77,5 +77,6 @@ body {
 .tiktok:hover    { color: #FF0050; }
 .instagram:hover { color: #E1306C; }
 .discord:hover   { color: #5865F2; }
+
 
 
