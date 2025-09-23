@@ -13,12 +13,12 @@ body, html {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url('space.gif');
-  background-size: auto;
-  background-repeat: repeat;
-  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   z-index: -1;
 }
 
@@ -79,3 +79,4 @@ body, html {
 .tiktok:hover    { color: #FF0050; }
 .instagram:hover { color: #E1306C; }
 .discord:hover   { color: #5865F2; }
+
