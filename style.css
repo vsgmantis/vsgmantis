@@ -10,9 +10,16 @@ body, html {
 
 /* Background */
 body {
-  background: url('space.gif') repeat center center fixed;
-  background-size: cover;
+  background: url('space.gif') repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: 'Orbitron', sans-serif;
+  color: white;
+  overflow: hidden;
 }
 
 /* Container + Header */
@@ -69,3 +76,4 @@ body {
 .tiktok:hover    { color: #FF0050; }
 .instagram:hover { color: #E1306C; }
 .discord:hover   { color: #5865F2; }
+
