@@ -59,13 +59,6 @@ body, html {
   box-shadow: 0 0 14px currentColor;
 }
 
-/* Kick logo image inside the box */
-.social.kick img {
-  width: 70%;   /* scales logo nicely inside */
-  height: auto; /* keeps proportions */
-  display: block;
-}
-
 /* Custom hover colors */
 .kick:hover      { color: #5ee95d; }
 .twitch:hover    { color: #9146FF; }
