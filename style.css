@@ -1,42 +1,41 @@
-/* Fullscreen Background */
+/* Background */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
-  background-color: black;
 }
 
 .background {
-  background: url('space.gif') no-repeat center center fixed;
-  background-size: cover;
-  filter: brightness(0.4);
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('space.gif');
+  background-size: cover;
+  background-position: center;
   z-index: -1;
 }
 
-/* Main Layout */
+/* Centered content */
 .container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  text-align: center;
-  color: white;
 }
 
-/* Header */
 .header {
   font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
   margin-bottom: 30px;
-  text-shadow: 0 0 15px white;
 }
 
-/* Social Buttons */
+/* Socials */
 .socials {
   display: flex;
   gap: 20px;
@@ -45,27 +44,25 @@ body, html {
 }
 
 .social {
-  font-size: 28px;
-  width: 60px;
-  height: 60px;
+  font-size: 2rem;
+  padding: 15px;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  color: white;
   text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.3s;
-  background-color: rgba(255, 255, 255, 0.05);
 }
 
+/* Hover Effects */
 .social:hover {
-  transform: scale(1.15);
-  box-shadow: 0 0 15px currentColor;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px currentColor;
 }
 
-/* Platform Colors */
-.kick { color: #00ff99; }
-.twitch { color: #9146FF; }
-.youtube { color: #FF0000; }
-.tiktok { color: #69C9D0; }
-.instagram { color: #E1306C; }
-.discord { color: #7289DA; }
+/* Custom Brand Colors */
+.kick:hover      { color: #5ee95d; }
+.twitch:hover    { color: #9146FF; }
+.youtube:hover   { color: #FF0000; }
+.tiktok:hover    { color: #FF0050; }
+.instagram:hover { color: #E1306C; }
+.discord:hover   { color: #5865F2; }
