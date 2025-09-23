@@ -70,3 +70,11 @@ body, html {
 .tiktok:hover    { color: #FF0050; }
 .instagram:hover { color: #E1306C; }
 .discord:hover   { color: #5865F2; }
+
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
