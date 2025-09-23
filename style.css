@@ -5,24 +5,10 @@ body, html {
   height: 100%;
   overflow: hidden;
   font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
-}
-
-/* Background */
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('space.gif');
-  background-repeat: repeat;
+  background: url('space.gif') repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  z-index: -1;
-  opacity: 1;            /* just in case */
-  pointer-events: none;  /* makes sure it doesn't block anything */
-  display: block;        /* forces it to exist */
+  background-color: black; /* fallback if gif fails */
+  color: white;
 }
 
 /* Container + Header */
@@ -82,5 +68,3 @@ body, html {
 .tiktok:hover    { color: #FF0050; }
 .instagram:hover { color: #E1306C; }
 .discord:hover   { color: #5865F2; }
-
-
