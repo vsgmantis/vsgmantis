@@ -9,12 +9,13 @@ body, html {
   color: white;
 }
 
-/* Background Setup */
+/* Background */
 body {
   background-image: url('space.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Container + Header */
@@ -58,13 +59,12 @@ body {
   justify-content: center;
 }
 
-/* Hover */
 .social:hover {
   transform: scale(1.1);
   box-shadow: 0 0 12px currentColor;
 }
 
-/* Custom Colors */
+/* Brand Colors */
 .kick:hover      { color: #5ee95d; }
 .twitch:hover    { color: #9146FF; }
 .youtube:hover   { color: #FF0000; }
