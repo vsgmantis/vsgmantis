@@ -1,0 +1,93 @@
+/* GENERAL AURA STYLING */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('space.gif');
+  background-repeat: repeat;
+  background-size: auto;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 3rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+/* LINKS SECTION */
+.links {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-box {
+  background: #111;
+  border: 2px solid #222;
+  padding: 10px;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.icon-box a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+/* PLATFORM GLOW COLORS ON HOVER */
+.kick:hover {
+  box-shadow: 0 0 12px #00ff66;
+  color: #00ff66;
+}
+.twitch:hover {
+  box-shadow: 0 0 12px #9146FF;
+  color: #9146FF;
+}
+.youtube:hover {
+  box-shadow: 0 0 12px #FF0000;
+  color: #FF0000;
+}
+.tiktok:hover {
+  box-shadow: 0 0 12px #25F4EE;
+  color: #25F4EE;
+}
+.instagram:hover {
+  box-shadow: 0 0 12px #F58529;
+  color: #F58529;
+}
+.discord:hover {
+  box-shadow: 0 0 12px #5865F2;
+  color: #5865F2;
+}
+
+/* SPOTIFY SECTION */
+.spotify {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+}
