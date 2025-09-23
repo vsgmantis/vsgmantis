@@ -3,24 +3,18 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
 
-/* Background */
+/* Background Setup */
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-
   background-image: url('space.gif');
-  background-repeat: repeat;
-  background-size: 150px 150px; /* ✅ this controls the size */
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 /* Container + Header */
@@ -77,6 +71,3 @@ body {
 .tiktok:hover    { color: #FF0050; }
 .instagram:hover { color: #E1306C; }
 .discord:hover   { color: #5865F2; }
-
-
-
