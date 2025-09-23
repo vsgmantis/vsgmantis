@@ -7,15 +7,10 @@ body, html {
   font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 
-body {
+  /* ✅ Background here */
   background: url('space.gif') repeat center center fixed;
   background-size: cover;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
+  background-color: black; /* fallback in case gif fails */
 }
 
 /* Container + Header */
@@ -26,6 +21,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: transparent;   /* ✅ make sure it doesn't cover background */
+  z-index: 1;                 /* ✅ ensures it shows on top of background */
 }
 
 .header {
@@ -41,6 +38,7 @@ body {
   gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
+  background: transparent;
 }
 
 .social {
@@ -50,7 +48,7 @@ body {
   height: 60px;
   text-align: center;
   border-radius: 12px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* translucent so gif shows under */
   transition: transform 0.3s, box-shadow 0.3s;
   color: white;
   text-decoration: none;
@@ -72,4 +70,3 @@ body {
 .tiktok:hover    { color: #FF0050; }
 .instagram:hover { color: #E1306C; }
 .discord:hover   { color: #5865F2; }
-
