@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vsgmantis</title>
 
+  <!-- Existing CSS -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Spotify SDK -->
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
 </head>
 <body>
 
+  <!-- Your site content -->
   <div class="container">
     <div class="header">vsgmantis</div>
 
@@ -47,5 +52,13 @@
     </div>
   </div>
 
+  <!-- 🎵 Spotify Floating Player UI -->
+  <div id="music-player">
+    <p>🎵 Floating Player Ready</p>
+    <button id="playButton">▶️ Play</button>
+  </div>
+
+  <!-- Your main JS -->
+  <script src="script.js"></script>
 </body>
 </html>
