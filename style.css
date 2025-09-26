@@ -67,34 +67,13 @@ body, html {
 .instagram:hover { color: #E1306C; }
 .discord:hover   { color: #5865F2; }
 
-/* 🎵 Spotify Floating Player */
+/* 🎵 Floating Spotify Embed Widget */
 #music-player {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #1db954;
-  color: white;
-  padding: 14px 20px;
-  border-radius: 14px;
-  font-family: sans-serif;
-  box-shadow: 0 0 15px rgba(0,0,0,0.25);
   z-index: 9999;
-  transition: 0.3s;
-  text-align: center;
-}
-
-#music-player p {
-  margin: 0;
-  font-weight: bold;
-}
-
-#music-player button {
-  margin-top: 10px;
-  background: white;
-  color: #1db954;
-  border: none;
-  padding: 8px 16px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
+  box-shadow: 0 0 14px rgba(0,0,0,0.4);
+  border-radius: 12px;
+  overflow: hidden;
 }
